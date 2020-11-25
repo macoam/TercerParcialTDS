@@ -8,22 +8,22 @@ interfaz.geometry("400x500")
 
 
 def apretar():
-    lblCuerda = Label(interfaz, text="6ta Cuerda").pack()
+    lblCuerda = Label(interfaz, text="5ta (La) - 110Hz)").pack()
     lblFrecuencia = Label(interfaz, text="Frecuencia Actual").pack()
-    lblFrecuenciaDato = Label(interfaz, text="80Hz").pack()
-    lblApretar = Label(interfaz, text="Es necesario apretar").pack()
+    lblFrecuenciaDato = Label(interfaz, text="107.6Hz").pack()
+    lblApretar = Label(interfaz, text="Es necesario apretar la cuerda").pack()
 
 def aflojar():
-    lblCuerda = Label(interfaz, text="6ta Cuerda").pack()
+    lblCuerda = Label(interfaz, text="5ta (La) - 110Hz)").pack()
     lblFrecuencia = Label(interfaz, text="Frecuencia Actual").pack()
-    lblFrecuenciaDato = Label(interfaz, text="80Hz").pack()
-    lblAflojar = Label(interfaz, text="Es necesario aflojar").pack()
+    lblFrecuenciaDato = Label(interfaz, text="114.6Hz").pack()
+    lblAflojar = Label(interfaz, text="Es necesario aflojar la cuerda").pack()
 
 def correcto():
-    lblCuerda = Label(interfaz, text="6ta Cuerda").pack()
+    lblCuerda = Label(interfaz, text="5ta (La) - 110Hz)").pack()
     lblFrecuencia = Label(interfaz, text="Frecuencia Actual").pack()
-    lblFrecuenciaDato = Label(interfaz, text="80Hz").pack()
-    lblCorreto = Label(interfaz, text="La frecuencia es correcta").pack()
+    lblFrecuenciaDato = Label(interfaz, text="110.4Hz").pack()
+    lblCorreto = Label(interfaz, text="La afinación es correcta").pack()
 
 def iniciar():
     apretar()
@@ -31,7 +31,7 @@ def iniciar():
     correcto()
     
 
-boton = Button(interfaz, text="Iniciar", command=iniciar)
+boton = Button(interfaz, text="Afinar", command=iniciar)
 boton.pack()
 
 interfaz.mainloop()
